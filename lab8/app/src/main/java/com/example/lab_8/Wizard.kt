@@ -23,5 +23,8 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
         }
     }
 
-    fun restoreMana(amount: Int) { }
+    // restores mana by the given amount, capped at a maximum of 100
+    fun restoreMana(amount: Int) {
+        mana = minOf(100, mana + amount)
+    }
 }
