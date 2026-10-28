@@ -5,6 +5,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
+// verifies Wizard's mana and spell power behavior across its spell casting and mana management methods
 class WizardTest {
     private lateinit var evilWizard: Wizard
 
